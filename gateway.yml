@@ -1,0 +1,15 @@
+---
+spring:
+  profiles: vagrant
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
